@@ -62,8 +62,9 @@ public class ContentFragment extends BaseFragment {
         basePagers = new ArrayList<>();
         basePagers.add(new NewsCenterPager(context));
         basePagers.add(new HerosPager(context));
-        basePagers.add(new MePager(context));
         basePagers.add(new ItemsPager(context));
+        basePagers.add(new MePager(context));
+
 
         //设置默认选中
         rg_main.check(R.id.rb_home);
