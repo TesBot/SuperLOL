@@ -12,12 +12,14 @@ import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import app_superlol.alex.com.myapplication.R;
 import app_superlol.alex.com.myapplication.activity.MainActivity;
 import app_superlol.alex.com.myapplication.adapter.ContentFragmentAdapter;
 import app_superlol.alex.com.myapplication.base.BaseFragment;
 import app_superlol.alex.com.myapplication.base.BasePager;
+import app_superlol.alex.com.myapplication.domain.HerosBean;
 import app_superlol.alex.com.myapplication.pager.HerosPager;
 import app_superlol.alex.com.myapplication.pager.ItemsPager;
 import app_superlol.alex.com.myapplication.pager.MePager;
@@ -78,6 +80,20 @@ public class ContentFragment extends BaseFragment {
         //监听某个页面被选中，初始化对应的页面数据
         viewpager.addOnPageChangeListener(new MyOnPageChangeListener());
         basePagers.get(0).initData();
+
+    }
+
+    /**
+     * 得到新闻中心
+     * @return
+     */
+    public NewsCenterPager getNewsCenterPager() {
+
+        return (NewsCenterPager) basePagers.get(0);
+    }
+
+    public void setHerosData(List<HerosBean.DataBean> data) {
+
 
     }
 

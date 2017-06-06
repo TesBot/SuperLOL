@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:text="多米尼克领主的致意"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_images_default"
+            android:padding="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_intruduce"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+50攻击力"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:gravity="left"
+            android:paddingRight="5dp"
+            android:textSize="12sp"
+            android:text="唯一被动—据点冲刺：当你在防御塔（包括被摧毁的防御塔）附近时，你会获得逐步提升的移动速度加成。在2秒后，该加成会达到最大值20%。 唯一被动—恩惠：附近的每个非你所杀的敌方小兵，在阵亡时都会为你提供6金币并治疗10生命值。 唯一主动：附近友方英雄移动速度增加40% ，持续时间3秒（冷却时间：60秒）。 只能持有1个金币收入型装备。 “赞美太阳！”—历史学家舒瑞娅，联盟历25年9月22日"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

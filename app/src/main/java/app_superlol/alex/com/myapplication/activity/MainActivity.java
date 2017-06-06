@@ -59,7 +59,19 @@ public class MainActivity extends SlidingFragmentActivity {
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 
         //设置主页占据宽度
-        slidingMenu.setBehindOffset(DensityUtil.dip2px(MainActivity.this,200));
+        slidingMenu.setBehindOffset(DensityUtil.dip2px(MainActivity.this,150));
 
+    }
+
+    public LeftmenuFragment getLeftmenuFragment() {
+        FragmentManager fm = getSupportFragmentManager();
+        LeftmenuFragment  leftmenuFragment = (LeftmenuFragment) fm.findFragmentByTag(LEFTMENU_TAG);
+        return leftmenuFragment;
+    }
+
+    public ContentFragment getContentFragment() {
+        FragmentManager fm = getSupportFragmentManager();
+        ContentFragment  contentFragment = (ContentFragment) fm.findFragmentByTag(MAIN_CONTENT_TAG);
+        return contentFragment;
     }
 }
